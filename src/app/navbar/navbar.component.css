@@ -1,0 +1,80 @@
+.floating-navbar {
+  position: fixed;
+  top: 20px;
+  left: 49%;
+  transform: translateX(-50%);
+  width: 28%;
+  background-color: #e0f2fe;
+  /* Azul marino con transparencia */
+  border-radius: 50px;
+  box-shadow: 0 4px 30px rgba(0, 60, 120, 0.3);
+  /* Sombra azulada */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(94, 158, 255, 0.5);
+  /* Borde azul claro */
+  padding: 15px 30px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  color: white;
+  /* Texto blanco para mejor contraste */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #646cff;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #646cff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 800px) {
+  .floating-navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    background-position-y: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+}
