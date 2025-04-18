@@ -80,3 +80,9 @@
 .btn:hover::before {
   left: 100%;
 }
+
+@media (max-width: 900px) {
+  .btn {
+    padding: 5px 30px;
+  }
+}
