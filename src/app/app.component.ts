@@ -4,6 +4,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +15,9 @@ import { ProjectsComponent } from './projects/projects.component';
     NavbarComponent,
     ProfileComponent,
     ExperienceComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AboutMeComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
